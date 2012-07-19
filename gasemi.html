@@ -29,7 +29,7 @@
 	      .addLayer(new wax.leaf.connector(tilejson))
 	      .setView(new L.LatLng(46, -71), 4);
 
-	  $.getJSON('/www-demo/demo/gasemi_ce/facility_gg_4326.json', function(geojsonFeature){
+	  $.getJSON('facility_gg_4326.json', function(geojsonFeature){
 	      var red_style = {
                   radius: 5,
                   fillColor: "#FF0000",
