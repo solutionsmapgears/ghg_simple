@@ -21,9 +21,6 @@
 	      tiles: ['http://mapcoop.org/1.0.0/GasEmission-v5/{z}/{x}/{y}.png'],
 	      grids: ['http://mapcoop.org/1.0.0/GasEmission-v5/{z}/{x}/{y}.grid.json']
 	  };
-
-         // var gasUrl = 'http://simonmercier.net/mapcache/wmts/gazemi/{z}/{x}/{y}.png',
-         // gasemiLayer = new L.TileLayer(gasUrl, {maxZoom: 10});
 	
 	  map = new L.Map('wax-fullscreen-map', {
 	          maxZoom: 8,
@@ -84,9 +81,6 @@
 	              e.layer.setRadius(10);
 	          });
 	          map.on('popupclose', function(){
-	              e.layer.setRadius(10);
-	          });
-	          map.on('popupclose', function(){
 	              e.layer.setRadius(5);
                   });
 	          
@@ -125,3 +119,6 @@
 </head>
 <body style="width: 100%; height: 100%">
         <div id="legend"><img src="http://mapcoop.org/www-demo/demo/legendgasemi.png" alt="" width="250" height="250" /></div>
+	<div id="wax-fullscreen-map" style="width: 100%; height: 100%"/>
+</body>
+</html>
